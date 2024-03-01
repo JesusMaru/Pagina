@@ -1,0 +1,304 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /*background: #5433FF;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(bottom, #5433FF, #20BDFF, #A5FECB);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to top, #5433FF, #20BDFF, #A5FECB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  :root{
+    --letrash1:#39A2DB;
+    --letrash2:#A2DBFA;
+  }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main-content {
+    margin-top: 60px; /* Ajustar el margen superior para compensar la altura del navbar */
+  }
+  
+  .logo img {
+    max-width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 20px; /* Ajusta el margen derecho del logo según tus necesidades */
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s; /* Animación al pasar el mouse */
+    font-size: 25px;
+
+  }
+  
+  .menu a:hover {
+    color: gray; /* Color al pasar el mouse */
+  }
+  
+  /*css de la imagen del header*/
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .image {
+    filter: grayscale(30%) blur(2px);
+    width: 100%; /* Ancho ocupando toda la página */
+    height: 400px; /* Altura deseada */
+    object-fit: cover; /* Ajuste para cubrir el contenedor manteniendo la relación de aspecto */
+    object-position: center; /* Posición centrada verticalmente */
+  }
+  .text {
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar la posición para centrar completamente */
+    text-align: center; /* Alinear el texto al centro */
+    font-size: 30px;
+    font-family: "Poppins", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-shadow: 2px 2px 2px black;
+  }
+
+
+  /* Cuadros de informacion*/
+  .serv h1{
+    text-align: center;
+    color:black;
+  }
+  .servicios {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los cuadros se ajusten automáticamente en varias filas */
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    align-items: center; /* Centra los cuadros verticalmente */
+    padding: 20px;
+    text-align: center; /* Centra el texto dentro de los cuadros */
+  }
+  
+  
+  .servicio {
+    text-align: center;
+    width: 150px; /* Ancho del cuadro de servicio */
+    padding: 20px;
+    background-color: #f2f2f2; /* Color de fondo del cuadro de servicio */
+    margin: 20px; /* Margen entre los cuadros de servicio */
+  }
+  
+  .icono {
+    font-size: 10em; /* Tamaño del icono */
+    margin-bottom: 10px; /* Espacio entre el icono y el título */
+  }
+  .servicio:hover {
+    transform: scale(1.1); /* Hace que el cuadro se haga un poco más grande al pasar el mouse */
+    transition: transform 0.3s ease; /* Agrega una transición suave para la animación */
+  }
+  .nosotros{
+    display: flex;
+    gap: 50px;
+    margin: 20px auto; /* Agrega un margen alrededor del contenedor y lo centra horizontalmente */
+    padding: 20px; /* Añade un relleno para separar los elementos del borde */
+  }
+  .vacaciones img {
+    width: 555px;
+    height: 664px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3%;
+    margin-left:350px;
+  }
+
+  .info-nosotros{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .info-nosotros h1{
+    font-family: 'Diphylleia', serif;
+    font-size: 30px;
+  }
+
+  .info-nosotros h2{
+    font-family: 'Kalnia', serif;
+    font-weight: bold;
+  }
+
+  .info-nosotros p{
+    font-size: 25px;
+    text-align: justify;
+    text-indent: 30px;
+  }
+
+  /*diseño del boton*/
+  button {
+    background-color: #053742; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Animación de transición para el color de fondo */
+    font-size: 17px;
+  }
+
+  button:hover {
+    background-color:#39A2DB; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+  }
+
+
+/* Estilo para destino */
+
+.destino{
+  text-align: center;
+}
+
+.destino h1{
+  font-family: 'Diphylleia', serif;
+  font-size: 30px;
+}
+
+.destino h2{
+  font-family: 'Kalnia', serif;
+  font-weight: bold;
+}
+.circle-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente las imágenes */
+  align-items: center; /* Centra verticalmente las imágenes */
+  margin-top: 30px; /* Espacio adicional en la parte superior */
+  margin-bottom: 30px; /* Espacio adicional en la parte inferior */
+}
+
+.circle {
+  position: relative;
+  width: 300px; /* Doble del tamaño original */
+  height: 300px; /* Doble del tamaño original */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 30px;
+  transition: all 0.3s ease;
+}
+
+.circle img {
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  height: 100%; /* Ajusta el alto de la imagen al contenedor */
+}
+
+.circle .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+}
+
+.circle:hover {
+  transform: scale(1.2);
+}
+
+.circle:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 155, 155, 0.5);
+}
+
+  /*footer*/
+/* Estilos para el footer */
+.site-footer {
+  background: linear-gradient(to top,#39A2DB,#A2DBFA);
+  color: #fff;
+  padding: 20px 20px;
+}
+
+/* Estilo para los widgets del footer */
+.footer-widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.widget {
+  flex: 0 0 30%;
+  margin-bottom: 20px;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+}
+.social-icons img {
+  width: 50px; /* Ancho deseado */
+  height: 50px; /* Alto deseado */
+}
+.widget h3{
+  font-size: 30px;
+}
+
+/* Estilos para el formulario de suscripción */
+.form-subscribe {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Estilos para la información de derechos de autor */
+.site-info {
+  text-align: center;
+}
